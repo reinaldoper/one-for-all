@@ -90,35 +90,37 @@ DROP DATABASE IF EXISTS SpotifyClone;
  (7, 'Somewhere Far Beyond', 5, 2007),
  (8, 'I Put A Spell On You', 6, 2012);
 
-  INSERT INTO SpotifyClone.Musicas (musicas_id, name_musica, duracao, album_id)
- VALUES (1, 'Samba em Paris', 267, 6),
- (2, 'VIRGO’S GROOVE', 369, 1),
- (3, 'Feeling Good', 100, 8),
- (4, 'O Medo de Amar é o Medo de Ser Livre', 207, 5),
- (5, 'Under Pressure', 152, 3),
- (6, 'BREAK MY SOUL', 279, 1),
- (7, 'Don’t Stop Me Now', 203, 2),
- (8, 'The Bard’s Song', 244, 7),
- (9, 'ALIEN SUPERSTAR', 116, 1),
- (10, 'Como Nossos Pais', 105, 4);
 
-  INSERT INTO SpotifyClone.Historico (musicas_id, data_reproducao, usuario_id)
- VALUES (1, '2022-02-28 10:45:55', 1),
- (2, '2020-05-02 05:30:35', 1),
- (3, '2020-03-06 11:22:33', 1),
- (3, '2022-08-05 08:05:17', 2),
- (4, '2020-01-02 07:40:33', 2),
- (3, '2020-11-13 16:55:13', 3),
- (2, '2020-12-05 18:38:30', 3),
- (1, '2021-08-15 17:10:10', 4),
- (1, '2022-01-09 01:44:33', 5),
- (5, '2020-08-06 15:23:43', 5),
- (4, '2017-01-24 00:31:17', 6),
- (6, '2017-10-12 12:35:20', 6),
- (7, '2011-12-15 22:30:49', 7),
- (7, '2012-03-17 14:56:41', 8),
- (8, '2022-02-24 21:14:22', 9),
- (9, '2015-12-13 08:30:22', 10);
+  INSERT INTO SpotifyClone.Musicas (musicas_id, name_musica, duracao, album_id)
+ VALUES (1, 'BREAK MY SOUL', 279, 1),
+ (2, 'VIRGO’S GROOVE', 369, 1 ),
+ (3, "ALIEN SUPERSTAR", 116, 1),
+ (4, 'Don’t Stop Me Now', 203, 2),
+ (5, 'Under Pressure', 152, 3),
+ (6, 'Como Nossos Pais', 105, 4),
+ (7, 'O Medo de Amar é o Medo de Ser Livre', 207, 5),
+ (8, 'Samba em Paris', 267, 6),
+ (9, 'The Bard’s Song', 244, 7),
+ (10, 'Feeling Good', 100, 8);
+
+ INSERT INTO SpotifyClone.Historico (musicas_id, usuario_id, data_reproducao)
+  VALUES
+    (8, 1, '2022-02-28 10:45:55'),
+    (2, 1, '2020-05-02 05:30:35'),
+    (10, 1, '2020-03-06 11:22:33'),
+    (10, 2, '2022-08-05 08:05:17'),
+    (7, 2, '2020-01-02 07:40:33'),
+    (10, 3, '2020-11-13 16:55:13'),
+    (2, 3, '2020-12-05 18:38:30'),
+    (8, 4, '2021-08-15 17:10:10'),
+    (8, 5, '2022-01-09 01:44:33'),
+    (5, 5, '2020-08-06 15:23:43'),
+    (7, 6, '2017-01-24 00:31:17'),
+    (1, 6, '2017-10-12 12:35:20'),
+    (4, 7, '2011-12-15 22:30:49'),
+    (4, 8, '2012-03-17 14:56:41'),
+    (9, 9, '2022-02-24 21:14:22'),
+    (3, 10, '2015-12-13 08:30:22');
 
   INSERT INTO SpotifyClone.Seguindo (usuario_id, artista_id_seguindo)
  VALUES (1, 1),
