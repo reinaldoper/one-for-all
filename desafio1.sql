@@ -75,10 +75,10 @@ DROP DATABASE IF EXISTS SpotifyClone;
   INSERT INTO SpotifyClone.Artista (artista_id, name_artista)
     VALUES (1, 'Beyoncé'),
     (2, 'Queen'),
-    (3, 'Blind Guardian'),
-    (4, 'Elis Regina'),
-    (5, 'Nina Simone'),
-    (6, 'Baco Exu do Blues');
+    (3, 'Elis Regina'),
+    (4, 'Baco Exu do Blues'),
+    (5, 'Blind Guardian'),
+    (6, 'Nina Simone');
 
   INSERT INTO SpotifyClone.Album (album_id, name_album, artista_id, ano_lancamento)
  VALUES (1, 'Renaissance', 1, 2022),
